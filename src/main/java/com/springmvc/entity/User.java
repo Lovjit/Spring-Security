@@ -16,8 +16,18 @@ public class User implements Serializable{
     private String username;
 
     private String password;
+    
+    private boolean enabled;
+    
+    public boolean isEnabled() {
+		return enabled;
+	}
 
-    public String getUsername() {
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public String getUsername() {
         return username;
     }
 
